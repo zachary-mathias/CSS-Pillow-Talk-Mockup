@@ -4,9 +4,7 @@
  * Build Helpers
  *********************************/
 /* give each element a border */
-* {
-    border: 1px solid cornflowerblue;
-}
+
 
 /* shrink images for placement */
 img {
@@ -36,3 +34,75 @@ h2 {
 h1 {
     font-family: 'Fredoka One', cursive;
 }
+/*********************************
+* Header
+*********************************/
+header{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+header div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-bottom: 20px;
+}
+header h1 {
+    text-align: left;
+    width: 100%;
+}
+header div:last-child{
+    justify-content: flex-end;
+    align-items: center;
+}
+/*********************************
+* Container
+*********************************/
+.container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+/*********************************
+* Aside/Nav
+*********************************/
+aside {
+    flex-basis: 15%;
+    min-width: 15%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+li{
+    list-style: none;
+    text-align: left;
+}
+ul{
+    padding: 0;
+}
+/*********************************
+* Main
+*********************************/
+main{
+    width: 85%;
+    flex-basis: 85%;
+}
+
+div[class$='row']  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+ .top-row img {
+    width: 100%;
+ }
+ .middle-row img {
+   width: 49%;
+ }
+ .bottom-row img {
+   width: 32%;
+ }                                  
